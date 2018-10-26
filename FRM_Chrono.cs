@@ -17,6 +17,8 @@ namespace Exo5
             InitializeComponent();
         }
 
+        
+
         private void Btn_Fermer_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -45,6 +45,7 @@
             // 
             // Txt_Nbr_Aleatoire
             // 
+            this.Txt_Nbr_Aleatoire.Enabled = false;
             this.Txt_Nbr_Aleatoire.Location = new System.Drawing.Point(106, 20);
             this.Txt_Nbr_Aleatoire.Name = "Txt_Nbr_Aleatoire";
             this.Txt_Nbr_Aleatoire.Size = new System.Drawing.Size(125, 20);
@@ -88,8 +89,8 @@
         #endregion
 
         private System.Windows.Forms.Label Lbl_Nbr_Aleatoire;
-        private System.Windows.Forms.TextBox Txt_Nbr_Aleatoire;
         private System.Windows.Forms.Button Btn_Actualiser;
         private System.Windows.Forms.Button Btn_Fermer;
+        internal System.Windows.Forms.TextBox Txt_Nbr_Aleatoire;
     }
 }

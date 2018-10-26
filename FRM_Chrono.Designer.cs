@@ -45,6 +45,7 @@
             // 
             // Txt_Chrono
             // 
+            this.Txt_Chrono.Enabled = false;
             this.Txt_Chrono.Location = new System.Drawing.Point(85, 18);
             this.Txt_Chrono.Name = "Txt_Chrono";
             this.Txt_Chrono.Size = new System.Drawing.Size(141, 20);
@@ -88,8 +89,8 @@
         #endregion
 
         private System.Windows.Forms.Label Lbl_Chrono;
-        private System.Windows.Forms.TextBox Txt_Chrono;
         private System.Windows.Forms.Button Btn_Actualiser;
         private System.Windows.Forms.Button Btn_Fermer;
+        internal System.Windows.Forms.TextBox Txt_Chrono;
     }
 }

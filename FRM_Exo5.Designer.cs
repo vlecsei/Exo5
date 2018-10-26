@@ -96,8 +96,8 @@
 
         private System.Windows.Forms.Label Lbl_Chrono;
         private System.Windows.Forms.Label Lbl_Nbr_Aleatoire;
-        private System.Windows.Forms.TextBox Txt_Chrono;
-        private System.Windows.Forms.TextBox Txt_Nbr_Aleatoire;
         private System.Windows.Forms.Timer Tim_Chrono;
+        internal System.Windows.Forms.TextBox Txt_Chrono;
+        internal System.Windows.Forms.TextBox Txt_Nbr_Aleatoire;
     }
 }

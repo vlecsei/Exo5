@@ -14,7 +14,7 @@ namespace Exo5
     {
         private System.Random aleat;
         private double nombre;
-        Int32 chrono;
+        internal Int32 chrono;
         public FRM_Exo5()
         {
             InitializeComponent();
