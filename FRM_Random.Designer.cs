@@ -48,6 +48,7 @@
             this.Txt_Nbr_Aleatoire.Enabled = false;
             this.Txt_Nbr_Aleatoire.Location = new System.Drawing.Point(106, 20);
             this.Txt_Nbr_Aleatoire.Name = "Txt_Nbr_Aleatoire";
+            this.Txt_Nbr_Aleatoire.ReadOnly = true;
             this.Txt_Nbr_Aleatoire.Size = new System.Drawing.Size(125, 20);
             this.Txt_Nbr_Aleatoire.TabIndex = 1;
             // 
@@ -59,6 +60,7 @@
             this.Btn_Actualiser.TabIndex = 2;
             this.Btn_Actualiser.Text = "Actualiser";
             this.Btn_Actualiser.UseVisualStyleBackColor = true;
+            this.Btn_Actualiser.Click += new System.EventHandler(this.Btn_Actualiser_Click);
             // 
             // Btn_Fermer
             // 

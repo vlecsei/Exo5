@@ -12,14 +12,23 @@ namespace Exo5
 {
     public partial class FRM_Random : Form
     {
-        public FRM_Random()
+        private FRM_Exo5 FRM_Princ;
+
+        public FRM_Random(FRM_Exo5 r)
         {
             InitializeComponent();
+            this.FRM_Princ = r;
         }
 
         private void Btn_Fermer_Click(object sender, EventArgs e)
         {
+            ((FRM_MDI)(this.FRM_Princ.MdiParent)).fermeNbrAleatoire();
             this.Close();
+        }
+
+        private void Btn_Actualiser_Click(object sender, EventArgs e)
+        {
+            this.Txt_Nbr_Aleatoire.Text = this.FRM_Princ.nombre.ToString();
         }
     }
 }

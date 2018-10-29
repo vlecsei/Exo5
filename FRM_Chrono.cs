@@ -12,16 +12,26 @@ namespace Exo5
 {
     public partial class FRM_Chrono : Form
     {
-        public FRM_Chrono()
+        private FRM_Exo5 FRM_Princ;
+
+        public FRM_Chrono(FRM_Exo5 f)
         {
             InitializeComponent();
+            this.FRM_Princ = f;
         }
 
         
 
         private void Btn_Fermer_Click(object sender, EventArgs e)
         {
+            ((FRM_MDI)(this.FRM_Princ.MdiParent)).fermeChrono();
             this.Close();
+        }
+        
+
+        private void Btn_Actualiser_Click(object sender, EventArgs e)
+        {
+            this.Txt_Chrono.Text = this.FRM_Princ.chrono.ToString();
         }
     }
 }

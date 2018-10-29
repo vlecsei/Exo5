@@ -48,6 +48,7 @@
             this.Txt_Chrono.Enabled = false;
             this.Txt_Chrono.Location = new System.Drawing.Point(85, 18);
             this.Txt_Chrono.Name = "Txt_Chrono";
+            this.Txt_Chrono.ReadOnly = true;
             this.Txt_Chrono.Size = new System.Drawing.Size(141, 20);
             this.Txt_Chrono.TabIndex = 2;
             // 
@@ -59,6 +60,7 @@
             this.Btn_Actualiser.TabIndex = 3;
             this.Btn_Actualiser.Text = "Actualiser";
             this.Btn_Actualiser.UseVisualStyleBackColor = true;
+            this.Btn_Actualiser.Click += new System.EventHandler(this.Btn_Actualiser_Click);
             // 
             // Btn_Fermer
             // 
@@ -91,6 +93,6 @@
         private System.Windows.Forms.Label Lbl_Chrono;
         private System.Windows.Forms.Button Btn_Actualiser;
         private System.Windows.Forms.Button Btn_Fermer;
-        internal System.Windows.Forms.TextBox Txt_Chrono;
+        public System.Windows.Forms.TextBox Txt_Chrono;
     }
 }

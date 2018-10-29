@@ -59,6 +59,7 @@
             this.Txt_Chrono.Enabled = false;
             this.Txt_Chrono.Location = new System.Drawing.Point(108, 16);
             this.Txt_Chrono.Name = "Txt_Chrono";
+            this.Txt_Chrono.ReadOnly = true;
             this.Txt_Chrono.Size = new System.Drawing.Size(140, 20);
             this.Txt_Chrono.TabIndex = 2;
             // 
@@ -67,6 +68,7 @@
             this.Txt_Nbr_Aleatoire.Enabled = false;
             this.Txt_Nbr_Aleatoire.Location = new System.Drawing.Point(108, 69);
             this.Txt_Nbr_Aleatoire.Name = "Txt_Nbr_Aleatoire";
+            this.Txt_Nbr_Aleatoire.ReadOnly = true;
             this.Txt_Nbr_Aleatoire.Size = new System.Drawing.Size(140, 20);
             this.Txt_Nbr_Aleatoire.TabIndex = 3;
             // 

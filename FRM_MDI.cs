@@ -16,12 +16,11 @@ namespace Exo5
         private FRM_Exo5 FRM_Princ;
         private FRM_Chrono FRM_C;
         private FRM_Random FRM_R;
+
         public FRM_MDI()
         {
             InitializeComponent();
-            FRM_Exo5 FRM_Princ;
-            FRM_Princ = new FRM_Exo5{ MdiParent = this };
-            
+            FRM_Princ = new FRM_Exo5 { MdiParent = this };
             FRM_Princ.Show();
         }
 
@@ -29,26 +28,51 @@ namespace Exo5
         {   
             if (this.FRM_C == null)
             {
-                FRM_Chrono FRM_C;
-                FRM_C = new FRM_Chrono { MdiParent = this };
-                FRM_C.Show();
+                this.FRM_C = new FRM_Chrono(this.FRM_Princ);
+                this.FRM_C.MdiParent = this;
+
+                this.FRM_C.Show();
             }
             else
             {
                 this.FRM_C.Activate();
             }
-            this.FRM_C.Txt_Chono.Text = this.FRM_Princ.chrono.ToString();
+            this.FRM_C.Txt_Chrono.Text = this.FRM_Princ.chrono.ToString();
             
         }
 
-        private void FRM_MDI_Load(object sender, EventArgs e)
+        private void nombreToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            if (this.FRM_R == null)
+            {
+                this.FRM_R = new FRM_Random(this.FRM_Princ);
+                this.FRM_R.MdiParent = this;
 
+                this.FRM_R.Show();
+            }
+            else
+            {
+                this.FRM_R.Activate();
+            }
+            this.FRM_R.Txt_Nbr_Aleatoire.Text = this.FRM_Princ.nombre.ToString();
+        }
+
+
+        public void fermeChrono()
+        {
+            this.FRM_C = null;
+        }
+
+        public void fermeNbrAleatoire()
+        {
+            this.FRM_R = null;
         }
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+        
     }
 }

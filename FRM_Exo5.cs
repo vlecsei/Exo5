@@ -13,8 +13,9 @@ namespace Exo5
     public partial class FRM_Exo5 : Form
     {
         private System.Random aleat;
-        private double nombre;
-        internal Int32 chrono;
+        public double nombre;
+        public Int32 chrono;
+
         public FRM_Exo5()
         {
             InitializeComponent();

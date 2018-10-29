@@ -90,7 +90,7 @@
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
@@ -110,37 +110,38 @@
             // chronoToolStripMenuItem1
             // 
             this.chronoToolStripMenuItem1.Name = "chronoToolStripMenuItem1";
-            this.chronoToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+            this.chronoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.chronoToolStripMenuItem1.Text = "Chrono";
             this.chronoToolStripMenuItem1.Click += new System.EventHandler(this.chronoToolStripMenuItem1_Click);
             // 
             // nombreToolStripMenuItem1
             // 
             this.nombreToolStripMenuItem1.Name = "nombreToolStripMenuItem1";
-            this.nombreToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+            this.nombreToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.nombreToolStripMenuItem1.Text = "Nombre";
+            this.nombreToolStripMenuItem1.Click += new System.EventHandler(this.nombreToolStripMenuItem1_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(154, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // fRMExo5ToolStripMenuItem1
             // 
             this.fRMExo5ToolStripMenuItem1.Name = "fRMExo5ToolStripMenuItem1";
-            this.fRMExo5ToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+            this.fRMExo5ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.fRMExo5ToolStripMenuItem1.Text = "1 FRM_Exo5";
             // 
             // fRMChronoToolStripMenuItem1
             // 
             this.fRMChronoToolStripMenuItem1.Name = "fRMChronoToolStripMenuItem1";
-            this.fRMChronoToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+            this.fRMChronoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.fRMChronoToolStripMenuItem1.Text = "2 FRM_Chrono";
             // 
             // fRMRandomToolStripMenuItem1
             // 
             this.fRMRandomToolStripMenuItem1.Name = "fRMRandomToolStripMenuItem1";
-            this.fRMRandomToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+            this.fRMRandomToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.fRMRandomToolStripMenuItem1.Text = "3 FRM_Random";
             // 
             // toolStripMenuItem2
@@ -167,7 +168,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FRM_MDI";
             this.Text = "Exo5";
-            this.Load += new System.EventHandler(this.FRM_MDI_Load);
             this.contextMenuStrip1.ResumeLayout(false);
             this.contextMenuStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
