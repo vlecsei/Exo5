@@ -48,7 +48,6 @@
             this.Txt_Nbr_Aleatoire.Enabled = false;
             this.Txt_Nbr_Aleatoire.Location = new System.Drawing.Point(106, 20);
             this.Txt_Nbr_Aleatoire.Name = "Txt_Nbr_Aleatoire";
-            this.Txt_Nbr_Aleatoire.ReadOnly = true;
             this.Txt_Nbr_Aleatoire.Size = new System.Drawing.Size(125, 20);
             this.Txt_Nbr_Aleatoire.TabIndex = 1;
             // 
@@ -83,6 +82,7 @@
             this.Controls.Add(this.Lbl_Nbr_Aleatoire);
             this.Name = "FRM_Random";
             this.Text = "FRM_Random";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 

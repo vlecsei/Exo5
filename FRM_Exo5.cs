@@ -13,8 +13,6 @@ namespace Exo5
     public partial class FRM_Exo5 : Form
     {
         private System.Random aleat;
-        public double nombre;
-        public Int32 chrono;
 
         public FRM_Exo5()
         {
@@ -30,10 +28,10 @@ namespace Exo5
 
         private void affiche()
         {
-            this.nombre = this.aleat.NextDouble();
-            this.Txt_Nbr_Aleatoire.Text = this.nombre.ToString();
-            this.chrono++;
-            this.Txt_Chrono.Text = this.chrono.ToString();
+            Donnees.LeNombre = this.aleat.NextDouble();
+            this.Txt_Nbr_Aleatoire.Text = Donnees.LeNombre.ToString();
+            Donnees.LeTemps++;
+            this.Txt_Chrono.Text = Donnees.LeTemps.ToString();
         }
 
     }

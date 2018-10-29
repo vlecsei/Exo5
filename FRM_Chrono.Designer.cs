@@ -48,7 +48,6 @@
             this.Txt_Chrono.Enabled = false;
             this.Txt_Chrono.Location = new System.Drawing.Point(85, 18);
             this.Txt_Chrono.Name = "Txt_Chrono";
-            this.Txt_Chrono.ReadOnly = true;
             this.Txt_Chrono.Size = new System.Drawing.Size(141, 20);
             this.Txt_Chrono.TabIndex = 2;
             // 
@@ -83,6 +82,7 @@
             this.Controls.Add(this.Lbl_Chrono);
             this.Name = "FRM_Chrono";
             this.Text = "FRM_Chrono";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
