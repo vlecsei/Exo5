@@ -29,7 +29,7 @@ namespace Exo5
         {   
             if (this.FRM_C == null)
             {
-                this.FRM_C = new FRM_Chrono();
+                this.FRM_C = new FRM_Chrono { MdiParent = this};
                 this.FRM_C.Show();
                 this.FRM_C.FormClosing += new FormClosingEventHandler(this.fermeChrono);
                 
@@ -46,7 +46,7 @@ namespace Exo5
         {
             if (this.FRM_R == null)
             {
-                this.FRM_R = new FRM_Random();
+                this.FRM_R = new FRM_Random { MdiParent = this };
                 this.FRM_R.Show();
                 this.FRM_R.FormClosing += new FormClosingEventHandler(this.fermeNbrAleatoire);
 

@@ -34,5 +34,6 @@ namespace Exo5
             this.Txt_Chrono.Text = Donnees.LeTemps.ToString();
         }
 
+        
     }
 }

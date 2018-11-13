@@ -85,6 +85,7 @@
             this.Controls.Add(this.Txt_Chrono);
             this.Controls.Add(this.Lbl_Nbr_Aleatoire);
             this.Controls.Add(this.Lbl_Chrono);
+            this.Enabled = false;
             this.Name = "FRM_Exo5";
             this.Text = "FRM_Exo5";
             this.TopMost = true;
